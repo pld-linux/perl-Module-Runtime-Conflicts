@@ -36,16 +36,15 @@ Moose::Conflicts and moose-outdated.
 
 %build
 %{__perl} Build.PL \
-	destdir=$RPM_BUILD_ROOT \
+	perl=%{__perl} \
 	installdirs=vendor
 ./Build
-
 %{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-./Build install
+./Build install \
+	destdir=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
