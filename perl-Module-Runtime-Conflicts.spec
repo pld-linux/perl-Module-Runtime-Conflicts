@@ -19,6 +19,7 @@ BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(Module::Build::Tiny)
 BuildRequires:	perl-Dist-CheckConflicts
 BuildRequires:	perl-Module-Runtime
 %endif
@@ -26,8 +27,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module provides conflicts checking for Module::Runtime, which had a
-recent release that broke some versions of Moose. It is called from
+This module provides conflicts checking for Module::Runtime, which had
+a recent release that broke some versions of Moose. It is called from
 Moose::Conflicts and moose-outdated.
 
 %prep
