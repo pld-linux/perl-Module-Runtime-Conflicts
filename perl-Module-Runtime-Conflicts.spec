@@ -52,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes INSTALL README
-%{perl_vendorlib}/Module/Runtime/Conflicts.pm
+%{perl_vendorlib}/Module/Runtime
 %{_mandir}/man3/*
