@@ -4,7 +4,6 @@
 #
 %define		pdir	Module
 %define		pnam	Runtime-Conflicts
-%include	/usr/lib/rpm/macros.perl
 Summary:	Module::Runtime::Conflicts - provide information on conflicts for Module::Runtime
 Summary(pl.UTF-8):	Module::Runtime::Conflicts - dostarczanie informacji o konfliktach dla Module::Runtime
 Name:		perl-Module-Runtime-Conflicts
